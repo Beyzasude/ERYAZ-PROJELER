@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="videOne">		
+		<iframe width="150%" id="videoOne" height="100%" src="https://www.youtube.com/embed/8q8ZlKmuFc8?version=3&loop=1&autoplay=1&mute=1&controls=0&playlist=8q8ZlKmuFc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;left:-30%;"></iframe>
+	</div>
+	<div class="videoTwo">
+		<iframe  width="150%" height="100%" src="https://www.youtube.com/embed/LMbFp_PhRG4?version=3&loop=1&autoplay=1&mute=1&controls=0&playlist=LMbFp_PhRG4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;left:-30%;"></iframe>
+	</div>
+	<video autoplay muted loop id="bgVideo" width="50%" height="100%" style="display:none;">
+		<source src="video.mp4" type="video/mp4">
+		</video>
+		<video autoplay muted loop id="bgVideo1" width="50%" height="100%" style="display:none;">
+			<source src="4U Oil.mp4" type="video/mp4">
+			</video>
+			<div class="main">
+				<div class="col left">
+					<div class="inner">
+						<div class="inner-logo">
+							<div class="front-back">
+								<div class="front-back-inner">
+									<div class=" inner-front">
+										<img src="images/4u-spare.png">
+									</div>
+									<div class="inner-back">
+										<div class="name">
+											<span>4U AUTO PARTS</span>
+											<a href="http://www.4uautoparts.com/" target="_blank">Keşfedin</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col right">
+					<div class="inner">
+						<div class="inner-logo">
+
+							<div class="front-back">
+								<div class="front-back-inner">
+									<div class=" inner-front">
+										<img src="images/4u-oil.png">
+									</div>
+									<div class="inner-back">
+										<div class="name">
+											<span>4U OİL</span>
+											<a href="http://www.4uoils.com//"target="_blank">Keşfedin</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<img src="images/4u-international.png" alt="4u-internationallogo">
+				</div>
+				<div class="border"></div>
+			</div>
+			<script type="text/javascript"  src="jquery.min.js"></script>
+			<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$(".col.left").mouseover(function () {
+						$('#videoOne').get(0).stopVideo()
+					});
+				});
+			</script>
+		</body>
+		</html>
